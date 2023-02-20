@@ -61,12 +61,12 @@ def main():
     res_types = [r[0] for r in res]
 
     args = [
-        ('oyaml', '-o=yaml', ['g'], ['owide', 'ojson', 'sl']),
-        ('owide', '-o=wide', ['g'], ['oyaml', 'ojson']),
-        ('ojson', '-o=json', ['g'], ['owide', 'oyaml', 'sl']),
-        ('all', '--all-namespaces', ['g', 'd'], ['rm', 'f', 'no', 'sys']),
+        ('oy', '-o=yaml', ['g'], ['owide', 'ojson', 'sl']),
+        ('ow', '-o=wide', ['g'], ['oyaml', 'ojson']),
+        ('oj', '-o=json', ['g'], ['owide', 'oyaml', 'sl']),
+        ('a', '--all-namespaces', ['g', 'd'], ['rm', 'f', 'no', 'sys']),
         ('sl', '--show-labels', ['g'], ['oyaml', 'ojson'], None),
-        ('all', '--all', ['rm'], None), # caution: reusing the alias
+        ('a', '--all', ['rm'], None), # caution: reusing the alias
         ('w', '--watch', ['g'], ['oyaml', 'ojson', 'owide']),
         ]
 
